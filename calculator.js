@@ -4,7 +4,7 @@ const num2 = parseFloat(prompt('Enter your second number:'));
 
 let result = 0;
 if(isNaN(num1) || isNaN(num2)){
-    alert('Wrong Input! Refresh the page and provide detail')
+    console.log('Wrong Input! Refresh the page and provide detail');
 }
 else if(operator== '+'){
         result = num1 + num2;
@@ -17,5 +17,5 @@ else if(operator == '/'){
     }
 else if(operator == '*'){
         result = num1 * num2;
-    }
-alert(num1 + operator + num2 + '=' + result);
+}
+console.log(`${num1} ${operator} ${num2} = ${result}`);
